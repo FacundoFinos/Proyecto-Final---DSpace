@@ -1,3 +1,0 @@
-@prefix bibo:   <http://purl.org/ontology/bibo/> .
-
-<>  a   bibo:Collection .
