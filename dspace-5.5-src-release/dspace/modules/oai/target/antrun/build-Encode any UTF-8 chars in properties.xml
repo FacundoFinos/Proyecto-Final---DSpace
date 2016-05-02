@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="Encode any UTF-8 chars in properties"  >
+<target name="Encode any UTF-8 chars in properties">
+  <native2ascii dest="C:\Proyecto Final - GitHub\Proyecto-Final\dspace-5.5-src-release\dspace\modules\oai/../../../target" encoding="UTF8" src="C:\Proyecto Final - GitHub\Proyecto-Final\dspace-5.5-src-release\dspace\modules\oai/../../.." includes="*.properties"/>
+</target>
+</project>

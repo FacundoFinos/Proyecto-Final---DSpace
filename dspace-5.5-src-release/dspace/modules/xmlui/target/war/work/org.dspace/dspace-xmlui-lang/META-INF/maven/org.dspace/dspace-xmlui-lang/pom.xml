@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.dspace</groupId>
+    <artifactId>dspace-xmlui-lang</artifactId>
+    <packaging>war</packaging>
+    <name>DSpace XML-UI (Manakin) I18N :: Language Packs</name>
+    <description>
+      DSpace Language Packs to support multiple languages in XMLUI.
+    </description>
+    <version>5.0.7</version>
+
+    <organization>
+        <name>DuraSpace</name>
+        <url>http://www.dspace.org</url>
+    </organization>
+
+    <!-- brings the sonatype snapshot repository and signing requirement on board -->
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>9</version>
+    </parent>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--
+      The SCM repository location is used by Continuum to update against
+      when changes have occurred.  This spawns a new build cycle and releases
+      snapshots into the snapshot repository below.
+    -->
+    <scm>
+        <connection>scm:git:git@github.com:DSpace/dspace-xmlui-lang.git</connection>
+        <developerConnection>scm:git:git@github.com:DSpace/dspace-xmlui-lang.git</developerConnection>
+        <url>git@github.com:DSpace/dspace-xmlui-lang.git</url>
+        <tag>dspace-xmlui-lang-5.0.7</tag>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>DuraSpace BSD License</name>
+            <url>https://raw.github.com/DSpace/DSpace/master/LICENSE</url>
+            <distribution>repo</distribution>
+            <comments>
+            A BSD 3-Clause license for the DSpace codebase.
+            </comments>
+        </license>
+    </licenses>
+    <issueManagement>
+        <system>JIRA</system>
+        <url>https://jira.duraspace.org/browse/DS</url>
+    </issueManagement>
+   
+</project>
